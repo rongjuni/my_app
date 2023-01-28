@@ -6,7 +6,7 @@ export const products = [
   },
   {
     id: 2,
-    img: "https://github.com/rongjuni/my_app/blob/main/src/img/port1.PNG",
+    img: "https://github.com/rongjuni/my_app/blob/main/src/img/port2.png?raw=true",
     link: "https://what-the-food.vercel.app/",
   },
   {
