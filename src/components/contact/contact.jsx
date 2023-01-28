@@ -15,7 +15,8 @@ const Contact = () => {
 
      emailjs.sendForm('service_bijbovc', 'template_o5c37cr', formRef.current, '9ZCXdgZk3MtfpR0Ka')
       .then((result) => {
-          console.log(result.text);
+        console.log(result.text);
+        alert("Submitted. Thank you")
       }, (error) => {
           console.log(error.text);
       });
