@@ -18,7 +18,9 @@ const Contact = () => {
         console.log(result.text);
         alert("Submitted. Thank you")
       }, (error) => {
-          console.log(error.text);
+        console.log(error.text);
+        alert("Submit failed. please contact admin")
+        
       });
   }
 
