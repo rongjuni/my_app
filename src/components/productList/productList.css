@@ -26,3 +26,14 @@
     width: 100%;
 }
 
+@media screen and (max-width:480px){
+    .pl{
+        padding: 10px;
+    }
+    .pl-texts{
+        width: 100%;
+    }
+    .pl-desc{
+        display: none;
+    }
+}

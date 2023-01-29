@@ -1,14 +1,20 @@
-import "./contact.css"
-import Phone from "../../img/phone.png"
-import Email from "../../img/email.png"
-import Address from "../../img/address.png"
-import { useRef } from "react"
+import "./contact.css";
+import Phone from "../../img/phone.png";
+import Email from "../../img/email.png";
+import Address from "../../img/address.png";
+import { useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
-
+import { useContext } from "react";
+import { ThemeContext } from "../../context";
 
 const Contact = () => {
   
-  const formRef = useRef()
+  const formRef = useRef();
+
+  const [done, setDone] = useState(false);
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
+
 
   const handleSubmit = (e) => { 
     e.preventDefault();
@@ -16,7 +22,7 @@ const Contact = () => {
      emailjs.sendForm('service_bijbovc', 'template_o5c37cr', formRef.current, '9ZCXdgZk3MtfpR0Ka')
       .then((result) => {
         console.log(result.text);
-        alert("Submitted. Thank you")
+        setDone(true);
       }, (error) => {
         console.log(error.text);
         alert("Submit failed. please contact admin")
@@ -47,11 +53,12 @@ const Contact = () => {
             <b>What's your story?</b> Get in touch. always welcome to hear about something from you.
           </p>
           <form ref={formRef} onSubmit={handleSubmit}>
-            <input type="text" required placeholder='Name' name='user_name' />
-            <input type="text" required placeholder='Subject' name='user_subject' />
-            <input type="text" required placeholder='Email' name='user_email' />
-            <textarea rows='5' required placeholder="Message" name='message' />
+            <input style={{backgroundColor : darkMode && "#333"}} type="text" required placeholder='Name' name='user_name' />
+            <input style={{backgroundColor : darkMode && "#333"}} type="text" required placeholder='Subject' name='user_subject' />
+            <input style={{backgroundColor : darkMode && "#333"}} type="text" required placeholder='Email' name='user_email' />
+            <textarea rows='5' style={{backgroundColor : darkMode && "#333"}} required placeholder="Message" name='message' />
             <button>Submit</button>
+            {done && " Submitted. Thank you"}
           </form>
         </div>
       </div>
