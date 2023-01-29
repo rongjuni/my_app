@@ -7,12 +7,12 @@ export const products = [
   {
     id: 2,
     img: "https://github.com/rongjuni/my_app/blob/main/src/img/port2.png?raw=true",
-    link: "https://what-the-food.vercel.app/",
+    link: "https://foot-rockers.vercel.app/",
   },
   {
     id: 3,
     img: "https://github.com/rongjuni/my_app/blob/main/src/img/port3.png?raw=true",
-    link: "https://what-the-food.vercel.app/",
+    link: "https://findpokemon.vercel.app/",
   },
   {
     id: 4,
