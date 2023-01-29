@@ -38,13 +38,13 @@ const Contact = () => {
           <h1 className="c-title">Let's discuss your project</h1>
           <div className="c-info">
             <div className="c-info-item">
-              <img src={Phone} alt="" className="c-icon" />5713458838
+              <img src={Phone} alt="" className="c-icon" />571.345.8838
             </div>
             <div className="c-info-item">
               <img src={Email} alt="" className="c-icon" />matt.djseo@gmail.com
             </div>
             <div className="c-info-item">
-              <img src={Address} alt="" className="c-icon" />colton
+              <img src={Address} alt="" className="c-icon" />Fairfax, VA
             </div>
         </div>
         </div>
