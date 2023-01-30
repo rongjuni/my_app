@@ -39,10 +39,16 @@
     object-fit:cover;
 }
 
-.a-award-img{
+.a-resume-img{
     width: 120px;
     height: 120px;
     border-radius: 20px;
+    margin-right: 10px;
+}
+
+.a-resume-img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .a-title{
@@ -55,20 +61,32 @@
 
 .a-desc{
     font-weight: 300;
+    margin: 20px 0;
+    width: 90%;
 }
 
-.a-award{
+.a-desc-mobile{
+    display:none;
+}
+
+.a-resume{
     margin: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.a-award-texts{
+.a-resume-icon{
+    margin-right: 10px;
+    justify-content: center;
+    
+}
+
+.a-resume-texts{
     width: 70%;
 }
 
-.a-award-titles{
+.a-resume-titles{
     font-weight: bold;
     color:#555;
     margin-bottom: 10px;
@@ -79,7 +97,8 @@
     .a{
         flex-direction: column;
         text-align: center;
-        margin-top: 50px;;
+        margin-top: 50px;
+        height: 100%
     }
 
     .a-left{
@@ -97,4 +116,18 @@
     .a-right{
         padding: 20px;
     }
+    .a-desc{
+        /* width: 100%; */
+        display:none;
+    }
+
+    .a-desc-mobile{
+        display:flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .a-resume-desc{
+        display:none;
+    }
+
 }

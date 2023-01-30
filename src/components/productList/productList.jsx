@@ -6,9 +6,9 @@ const ProductList = () => {
   return (
       <div className='pl'>
           <div className='pl-texts'>
-              <h1 className='pl-title'>Creat & inspire. It's Lama</h1>
+              <h1 className='pl-title'>Create as Idea comes up.</h1>
               <p className='pl-desc'>
-                  Lama is a creative portfolio that your work has been waiting for. Beautiful homes, stunning portfolio style & a whole lot more inside.
+                  Check out my fun projects below! If you have any feedback, please scroll down to the bottom and share your idea with me.
               </p>
           </div>
           <div className='pl-list'>
