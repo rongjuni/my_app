@@ -1,7 +1,5 @@
 import React from "react";
-import Me from "../../img/Me.jpg";
 import MyPic from "../../img/myPic.png";
-import MyPic2 from "../../img/myPic2.jpg";
 import "./intro.css";
 
 const Intro = () => {
@@ -83,7 +81,7 @@ const Intro = () => {
       </div>
       <div className="i-right">
         <div className="i-bg"></div>
-        <img src={MyPic} alt="" className="i-img"></img>
+          <img src={MyPic} alt="" className="i-img" />
       </div>
     </div>
   );
